@@ -1,0 +1,120 @@
+# Business Configuration
+# This file contains all business-specific configuration for the website
+# It's safe to commit this file to version control as it contains no sensitive data
+
+# =====================================================
+# BUSINESS INFORMATION
+# =====================================================
+business:
+  name: Sydney Roof Cleaning Pros
+  logo: /images/Sydney-Roof-Cleaning-Pros-logo.png
+  tagline: Professional roof washing service to restore your roof's appearance and extend its lifespan
+  phone: (02) 5564 2922
+  email: info@sydneyroofcleaningpros.com.au
+  owner_name: Troy Baskins
+  broad_region: Greater Sydney
+  form_location: Surry Hills
+
+# =====================================================
+# BUSINESS ADDRESS
+# =====================================================
+address:
+  street: "Suite 6/68 Sir John Young Cres"
+  city: Woolloomooloo
+  state: NSW
+  postcode: "2011"
+  country: Australia
+
+# =====================================================
+# SERVICE CONFIGURATION
+# =====================================================
+service:
+  main_category: Roof Cleaning
+  main_location: Sydney
+  radius_km: 35
+  max_location_pages: 800
+  # Sydney CBD coordinates
+  center_lat: -33.8670
+  center_lng: 151.2045 
+
+# =====================================================
+# BRAND COLORS
+# =====================================================
+# Colors should be hex values without the # prefix
+colors:
+  primary: "004AAB"    # Professional blue
+  secondary: "059669"  # Green (eco-friendly)
+  accent: DC2626     # Red accent
+  cta: D50001       # Red CTA buttons
+
+# =====================================================
+# BUSINESS HOURS
+# =====================================================
+hours:
+  monday: 7:00 AM - 7:00 PM
+  tuesday: 7:00 AM - 7:00 PM
+  wednesday: 7:00 AM - 7:00 PM
+  thursday: 7:00 AM - 7:00 PM
+  friday: 7:00 AM - 7:00 PM
+  saturday: 7:00 AM - 7:00 PM
+  sunday: 7:00 AM - 7:00 PM
+
+# =====================================================
+# SOCIAL MEDIA
+# =====================================================
+social:
+  facebook: https://www.facebook.com/SydneyRoofCleaningPros
+  instagram: ""
+  linkedin: ""
+  youtube: ""
+
+# =====================================================
+# WEBSITE & SEO
+# =====================================================
+website:
+  url: https://www.sydneyroofcleaningpros.com.au
+  google_maps_url: ""
+  google_reviews_url: ""
+
+# =====================================================
+# GOOGLE MAPS INTEGRATION
+# =====================================================
+google_maps:
+  # Full iframe embed code from Google Maps (enclose in quotes)
+  embed: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.6930745940995!2d151.2138790765608!3d-33.871800019215804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae135dde17d9%3A0x2662e89ee73200ec!2sSuite%206%2F68%20Sir%20John%20Young%20Cres%2C%20Woolloomooloo%20NSW%202011!5e0!3m2!1sen!2sau!4v1758459032849!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>'
+
+# =====================================================
+# FOOTER CONFIGURATION
+# =====================================================
+footer:
+  # Featured suburbs to display in the footer (max 11)
+  # Leave empty [] for automatic smart selection based on population and distance
+  # Or specify suburb names manually like ["Parramatta", "Bondi", "Manly"]
+  featured_suburbs: [
+    "Parramatta",      # Major CBD of Western Sydney
+    "Chatswood",       # North Shore commercial hub
+    "Bondi",           # Iconic Eastern beach suburb
+    "Manly",           # Northern Beaches hub
+    "Liverpool",       # South-West Sydney center
+    "Blacktown",       # Western Sydney major center
+    "Hornsby",         # Upper North Shore hub
+    "Cronulla",        # Sutherland Shire coastal hub
+    "Bankstown",       # South-West commercial center
+    "Penrith",         # Greater Western Sydney center
+    "Strathfield",     # Inner West transport hub
+    "Hurstville",      # St George region center
+    "Castle Hill",     # Hills District center
+    "Ryde"             # Northern commercial hub
+  ]
+
+  # Selection mode for handling multiple suburb matches
+  # Options: 'best_match' (default) or 'all_variations'
+  suburb_selection_mode: best_match
+
+  # Auto-supplement with smart selection if fewer than 11 suburbs
+  # Set to false to show only explicitly listed suburbs
+  auto_supplement: false
+
+  # Maximum number of suburbs to display (optional)
+  # Leave unset to show all featured suburbs
+  # suburb_limit: 15
